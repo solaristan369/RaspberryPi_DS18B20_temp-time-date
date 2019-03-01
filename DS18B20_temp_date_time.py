@@ -34,13 +34,9 @@ def read_temp():
     
 while True:
     now = datetime.now()
-    currentHour = now.hour
-    currentMin = now.minute
-    currentSec = now.second
-    currentYear = now.year
-    currentMonth = now.month
-    currentDay = now.day
-    
+      
     print ("The Date is:   "), (now.strftime("%a %d-%m-%Y"))
     print ("The Time is:   "), (now.strftime("%H:%M:%S"))
+    print ("Celsius, Fahrenheit"), (read_temp())
+    print("-"*60)
     time.sleep(2)
