@@ -1,3 +1,15 @@
+# Credits to circuits basics tutorials : http://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/
+
+#1. At the command prompt, enter: sudo nano /boot/config.txt
+#2. Then add this to the bottom of the file: dtoverlay=w1–gpio
+#3. Exit Nano, and reboot the Pi (sudo reboot)
+#4. Log in to the Pi again, and at the command prompt enter sudo modprobe w1–gpio
+#5. Then enter sudo modprobe w1-therm
+#6. Change directories to the /sys/bus/w1/devices directory by entering: cd /sys/bus/w1/devices
+#7. Now enter ls to list the devices:
+
+
+
 import os 
 import glob
 import time
