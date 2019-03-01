@@ -17,7 +17,7 @@ def read_temp_raw():
     f.close()
     return lines
  
- def read_temp():
+def read_temp():
     lines = read_temp_raw()
     while lines[0].strip()[-3:] != 'YES':
         time.sleep(0.2)
@@ -31,3 +31,17 @@ def read_temp_raw():
         temp_c = str(round(temp_c,2))
         temp_f = str(round(temp_f,2))
         return temp_c, temp_f
+    
+while True:
+    now = datetime.now()
+    currentHour = now.hour
+    currentMin = now.minute
+    currentSec = now.second
+    currentYear = now.year
+    currentMonth = now.month
+    currentDay = now.day
+    
+    print
+    print
+    print
+    
