@@ -41,7 +41,6 @@ while True:
     currentMonth = now.month
     currentDay = now.day
     
-    print
-    print
-    print
-    
+    print ("The Date is:   "), (now.strftime("%a %d-%m-%Y"))
+    print ("The Time is:   "), (now.strftime("%H:%M:%S"))
+    time.sleep(2)
